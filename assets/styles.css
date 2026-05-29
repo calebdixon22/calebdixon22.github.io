@@ -1022,7 +1022,14 @@ em { font-style: italic; }
    RESPONSIVE
    ===================================================================== */
 /* Dashboard helpers */
-.dash-h3-mt { margin-top: 28px; }
+.dash-h3-mt {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.chip-list-soft {
+  margin-top: 12px;
+}
 .chip-list-soft li {
   background: rgba(255, 255, 255, 0.03);
   border-color: rgba(255, 255, 255, 0.10);
