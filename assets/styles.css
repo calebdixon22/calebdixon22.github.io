@@ -1022,14 +1022,21 @@ em { font-style: italic; }
    RESPONSIVE
    ===================================================================== */
 @media (max-width: 960px) {
-  .hero-grid { grid-template-columns: 1fr; }
+  .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+  .hero-portrait { max-width: 380px; margin: 0 auto; }
   .hallmarks { grid-template-columns: repeat(2, 1fr); }
   .t-item { grid-template-columns: 1fr; gap: 16px; }
-  .t-meta { position: static; flex-direction: row; gap: 16px; }
+  .t-meta { position: static; flex-direction: row; gap: 16px; flex-wrap: wrap; }
   .proj-grid { grid-template-columns: 1fr; }
+  .pub-grid { grid-template-columns: 1fr; }
+  .pub-feature { grid-column: span 1; }
+  .pub-feature .pub-title { font-size: 22px; max-width: 100%; }
   .dash-grid { grid-template-columns: repeat(2, 1fr); }
   .dash-themes, .dash-outputs, .dash-methods { grid-column: 1 / -1; }
   .methods-grid { grid-template-columns: 1fr; gap: 20px; }
+  .edu-grid { grid-template-columns: 1fr; gap: 24px; }
+  .skills-contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .contact-card { position: static; top: auto; }
   .contact-grid { grid-template-columns: 1fr; }
   .proj-meta { grid-template-columns: 1fr; gap: 10px; }
 }
@@ -1046,14 +1053,46 @@ em { font-style: italic; }
     background: var(--paper);
     border-bottom: 1px solid var(--line);
     padding: 8px var(--gutter) 16px;
+    z-index: 50;
   }
   .site-nav.is-open a {
     padding: 12px 0;
     border-bottom: 1px solid var(--line-soft);
   }
-  .hero-meta { grid-template-columns: 1fr; }
+  .brand-tag { display: none; }
+  .hero { padding-top: 56px; padding-bottom: 48px; }
+  .hero-portrait { max-width: 280px; }
+  .hero-eyebrow { font-size: 13px; }
+  .hero h1 { font-size: clamp(34px, 9vw, 48px); line-height: 1.05; }
+  .hero-lede { font-size: 16px; }
+  .hero-cta { flex-wrap: wrap; gap: 10px; }
+  .btn { padding: 12px 18px; font-size: 13px; }
+  .hero-meta { grid-template-columns: 1fr; gap: 12px; }
   .hallmarks { grid-template-columns: 1fr; }
-  .contact-list li { grid-template-columns: 1fr; gap: 4px; }
+  .container { padding-left: 20px; padding-right: 20px; }
+  .section { padding: 64px 0; }
+  .section-title { font-size: clamp(26px, 6vw, 34px); }
+  .pub { padding: 24px 20px; }
+  .pub-title { font-size: 19px; }
+  .t-item { padding: 24px 0; }
+  .t-role { font-size: 20px; }
+  .t-org { font-size: 15px; }
+  .proj-card { padding: 24px 20px; }
+  .edu-card { padding: 24px 20px; }
+  .edu-head { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .edu-date { font-size: 12px; }
+  .contact-card { padding: 24px 20px; }
+  .contact-list li { grid-template-columns: 1fr; gap: 4px; padding: 14px 0; }
+  .skills-list > div { grid-template-columns: 1fr; gap: 8px; padding: 18px 0; }
+  .skills-list dt { font-size: 10.5px; }
+  .skills-list dd { font-size: 14.5px; }
+  .dash-grid { grid-template-columns: 1fr; gap: 16px; }
+  .dash-card { padding: 20px; }
+  .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+  .kpi-num { font-size: 28px; }
+  .chip-list { gap: 6px; }
+  .chip-list li { font-size: 12px; padding: 5px 10px; }
+  .site-footer .container { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
 
 /* Print */
