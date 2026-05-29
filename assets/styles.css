@@ -1021,6 +1021,24 @@ em { font-style: italic; }
 /* =====================================================================
    RESPONSIVE
    ===================================================================== */
+/* Dashboard helpers */
+.dash-h3-mt { margin-top: 28px; }
+.chip-list-soft li {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.10);
+  color: #b9bccc;
+}
+
+/* Centered contact-only section */
+.contact-wrap {
+  max-width: 680px;
+  margin: 0 auto;
+}
+.contact-wrap .contact-card {
+  position: static;
+  top: auto;
+}
+
 @media (max-width: 960px) {
   .hero-grid { grid-template-columns: 1fr; gap: 32px; }
   .hero-portrait { max-width: 380px; margin: 0 auto; }
