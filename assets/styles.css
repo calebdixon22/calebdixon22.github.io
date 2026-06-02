@@ -1035,6 +1035,12 @@ em { font-style: italic; }
   border-color: rgba(255, 255, 255, 0.10);
   color: #b9bccc;
 }
+.chip-list-soft li.chip-featured {
+  background: rgba(196, 156, 78, 0.10);
+  border-color: rgba(196, 156, 78, 0.40);
+  color: #e2cf9f;
+  font-weight: 500;
+}
 
 /* Centered contact-only section */
 .contact-wrap {
